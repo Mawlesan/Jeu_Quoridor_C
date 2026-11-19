@@ -1,1 +1,0 @@
-# projet-quoridor-ing3-2024-ing3-quoridor-2024-s03-16
