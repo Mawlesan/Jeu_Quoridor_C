@@ -32,7 +32,13 @@ quoridor.exe
 
 ## Ma contribution
 
-- **Placement des barrières** par coordonnées avec vérification des limites, des cases voisines, du nombre de barrières restantes et des chevauchements
+- **Placement des barrières** :
+  - Plateau modélisé par une matrice 17×17 (indices impairs réservés aux murs), avec conversion des coordonnées saisies (ex. `D1 D2 G`)
+  - Contrôles avant placement (limites, adjacence des cases, stock restant, collisions), puis écriture du mur et passage au joueur suivant
+
+- **Robustesse et respect des règles** :
+  - Validation des saisies utilisateur (vérification des retours de `scanf`, nettoyage du tampon d'entrée, nouvelle demande en cas d'erreur)
+  - Rejet des coups illégaux (sortie du plateau, déplacement à travers un mur, barrière invalide), le joueur rejouant son tour
 
 ## Équipe
 
