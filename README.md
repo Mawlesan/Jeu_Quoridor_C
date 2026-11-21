@@ -33,7 +33,7 @@ quoridor.exe
 ## Ma contribution
 
 - **Placement des barrières** :
-  - Plateau modélisé par une matrice 17×17 (indices impairs réservés aux murs), avec conversion des coordonnées saisies (ex. `D1 D2 G`)
+  - Plateau modélisé par une matrice 17×17 (indices impairs réservés aux murs) : conversion des coordonnées saisies vers la matrice par doublement des indices (ex. `D1` → [0][6])
   - Contrôles avant placement (limites, adjacence des cases, stock restant, collisions), puis écriture du mur et passage au joueur suivant
 
 - **Robustesse et respect des règles** :
